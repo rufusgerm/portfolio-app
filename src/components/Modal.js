@@ -18,7 +18,7 @@ const funnyFunction = (urlStr) => {
     window.open(urlStr, "_blank");
     return null;
   }
-  let dotIdx = urlStr.search("...");
+  let dotIdx = urlStr.indexOf("...");
   const promptStr = urlStr.slice(0, dotIdx);
   const oldUrl = urlStr.slice(dotIdx + 3);
   alert(promptStr);

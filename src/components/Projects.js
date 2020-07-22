@@ -58,7 +58,8 @@ const IMAGES = [
     layout and design, to the responsiveness was tuned specifically by yours truly.`,
     id: 4,
     tech: ["React", "Javascript", "HTML5", "CSS3", "VSCode"],
-    url: "That's this site, silly!...https://rufusgerm.github.io/",
+    url:
+      "That's this site, silly! Click OK to redirect to the old site...https://rufusgerm.github.io/",
   },
   {
     path: "delivery-app.png",
