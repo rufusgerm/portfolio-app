@@ -1,0 +1,61 @@
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 74vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gallery-item {
+  display: flex;
+  overflow: visible;
+  height: 45%;
+  width: 30%;
+  border-radius: 20px;
+  transition: all 400ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 245, 245);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.68);
+}
+
+@media only screen and (max-width: 835px) {
+  .projects-gallery {
+    height: 66vh;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .projects-gallery {
+    height: 60vh;
+  }
+  .gallery-item {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .projects-gallery {
+    height: 52vh;
+  }
+}
+
+.gallery-item img {
+  height: 92.5%;
+  width: 87.5%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 0.5px solid var(--bg-standout);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  border: none;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.68);
+  cursor: pointer;
+}

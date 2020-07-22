@@ -1,0 +1,174 @@
+.about-me-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 74vh;
+}
+
+.interests-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95%;
+}
+
+.interests-header {
+  font-family: "Libre Caslon Display", serif;
+  margin-bottom: 1rem;
+}
+
+.interests-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 15%;
+}
+
+.interests-btns button {
+  font-size: 1rem;
+  text-align: center;
+  width: fit-content;
+  height: 75%;
+  padding: 0.3rem 1.5rem;
+  margin: 0.3rem 0;
+  color: var(--bg-standout);
+  background-color: var(--bg-nav-foot);
+  background: var(--bg-nav-foot);
+  border-radius: 25px;
+  border: 0.5px solid var(--bg-nav-foot);
+  transition: all 300ms ease-in-out;
+}
+
+.interests-btns button:hover {
+  color: var(--bg-nav-foot);
+  background-color: var(--bg-nav-foot);
+  background: none;
+  cursor: pointer;
+}
+
+.interests-btns button:active,
+.interests-btns button:focus {
+  outline: none;
+}
+
+.interests-body {
+  font-size: 0.8rem;
+  height: 100%;
+  margin-top: 1rem;
+  overflow-y: scroll;
+}
+
+.visible-interest {
+  display: inline;
+}
+
+.invisible-interest {
+  display: none;
+}
+
+.skills-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+}
+
+.skills-header {
+  font-family: "Libre Caslon Display", serif;
+  min-height: 13%;
+  margin-top: 2rem;
+}
+
+.skill-gallery {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25%;
+  max-height: 85%;
+  width: 95%;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.125rem;
+  background: var(--bg-nav-foot);
+  max-height: 65px;
+  max-width: 65px;
+  height: 25%;
+  width: 25%;
+  border-radius: 30%;
+  transition: all 500ms ease-in-out;
+}
+
+.skill-icon {
+  max-height: 75%;
+  max-width: 75%;
+}
+
+.skill-item:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 678px) {
+  .skill-gallery {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    max-height: 90%;
+    margin-top: -1rem;
+  }
+  .skill-item {
+    height: 15%;
+    width: 20%;
+  }
+
+  .interests-btns button {
+    font-size: 0.5rem;
+    height: 66%;
+    width: 40%;
+    padding: 0.3rem 0rem;
+  }
+}
+
+@media only screen and (max-height: 375px) and (orientation: landscape) {
+  .skill-gallery {
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .skill-item {
+    max-height: 40px;
+    max-width: 40px;
+    height: 10%;
+    width: 15%;
+  }
+
+  .skill-icon {
+    max-height: 70%;
+    max-width: 70%;
+  }
+
+  .interests-header {
+    margin-bottom: 0.3rem;
+  }
+
+  .interests-btns button {
+    height: 100%;
+  }
+
+  .interests-body {
+    margin-top: 0.3rem;
+  }
+}

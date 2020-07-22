@@ -1,0 +1,66 @@
+/* Meta Page Styles */
+/*#region*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 20px;
+  --nav-height: 8vh;
+  --bg-primary: #77d9d4;
+  --bg-secondary: #57bc90;
+  --bg-standout: #015249;
+  --bg-nav-foot: rgba(255, 255, 255, 0.774);
+  --bg-nav-slider-primary: #aad1cf;
+  --bg-nav-slider-secondary: #c2dfdd;
+  --bg-pages: linear-gradient(90deg, var(--bg-primary), var(--bg-secondary));
+  --menus-bg-gradient: linear-gradient(
+    120deg,
+    var(--bg-nav-slider-primary),
+    var(--bg-nav-slider-secondary)
+  );
+  --default-top-border: 0.5px rgba(0, 0, 0, 0.2) solid;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-standout);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: var(--bg-standout);
+}
+/*#endregion*/
+
+/* React Transitions */
+/* #region */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+/* #endregion */
+
+/* JUNK */
+.wf {
+  border: 1px red dotted;
+}

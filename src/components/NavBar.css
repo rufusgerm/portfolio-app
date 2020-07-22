@@ -1,0 +1,158 @@
+.navbar {
+  position: sticky;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--nav-height);
+  background: var(--bg-nav-foot);
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.68);
+  transform-style: preserve-3d;
+}
+
+.navbar-brand {
+  flex: 2;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--bg-standout);
+  letter-spacing: 0.15rem;
+  transition: all 750ms ease-in-out;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.navbar-brand:hover,
+.navbar-link a:hover,
+.collapse-icon:hover {
+  color: var(--bg-standout);
+  opacity: 0.4;
+}
+
+.navbar-nav {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.navbar-link {
+  transition: all 750ms ease-in-out;
+}
+
+.ext-link {
+  display: none;
+}
+
+.navbar-link:first-child {
+  margin-left: auto;
+}
+
+.navbar-link a {
+  margin: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--bg-standout);
+  transition: opacity 750ms ease-in-out;
+}
+
+.navbar-collapse {
+  flex: 1;
+  display: none;
+}
+
+.collapse-icon {
+  color: var(--bg-standout);
+  cursor: pointer;
+  transition: all 750ms ease-in-out;
+  margin-top: 0.4rem;
+}
+
+/* Navbar Slide Over Setup */
+/* #region */
+@media only screen and (max-width: 678px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .navbar-link {
+    opacity: 0;
+  }
+
+  .ext-link {
+    display: block;
+  }
+
+  .navbar-link a {
+    font-size: 1.5rem;
+  }
+
+  .navbar-link li {
+    height: 12vh;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 82.5vh;
+    width: 100%;
+    margin-right: 0;
+    background: var(--menus-bg-gradient);
+    border-top: var(--default-top-border);
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 500ms ease-out;
+  }
+
+  .navbar-link:first-child {
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+
+  .navbar-collapse {
+    display: block;
+    text-align: center;
+  }
+}
+/* #endregion */
+
+.navbar-nav-active {
+  transform: translateX(0%);
+}
+
+.collapse-icon-spin {
+  transform: rotate(180deg);
+}
+
+.navbar-link-show {
+  opacity: 1;
+}
+
+/* Media Queries For Navbar Slider */
+/* #region */
+/* iPhone 6/7/8 in Landscape */
+@media screen and (max-height: 375px) and (orientation: landscape) {
+  .navbar {
+    min-height: 10vh;
+  }
+  .navbar-nav {
+    top: 10vh;
+  }
+}
+/* iPhone 5/SE in Landscape */
+@media screen and (max-height: 355px) and (orientation: landscape) {
+  .navbar-nav {
+    top: 12vh;
+  }
+}
