@@ -57,6 +57,7 @@
 
 .interests-body {
   font-size: 0.8rem;
+  font-weight: lighter;
   height: 100%;
   margin-top: 1rem;
   overflow-y: scroll;

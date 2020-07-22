@@ -52,13 +52,13 @@ const IMAGES = [
     desc: `Wait!..What? How did this get here? Well, after graduating I wanted to learn React.js
     and what better way to learn a new technology than by refurbishing an old project for the purpose. So
     here we are. It was a really fun process and I may have the previous site link around here somewhere...
-    for comparisons-sake, of course.`,
+    for comparisons-sake, of course. Perhaps the tutorial button...`,
     dev: `This project was developed using React, HTML5, CSS3, and JavaScript. The routing and transitions are
     implemented with React-Router. No other outside frameworks or libraries were used. Everything from the 
     layout and design, to the responsiveness was tuned specifically by yours truly.`,
     id: 4,
     tech: ["React", "Javascript", "HTML5", "CSS3", "VSCode"],
-    url: "That's this site, silly!",
+    url: "That's this site, silly!...https://rufusgerm.github.io/",
   },
   {
     path: "delivery-app.png",

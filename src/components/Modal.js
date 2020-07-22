@@ -18,7 +18,11 @@ const funnyFunction = (urlStr) => {
     window.open(urlStr, "_blank");
     return null;
   }
-  alert(urlStr);
+  let dotIdx = urlStr.search("...");
+  const promptStr = urlStr.slice(0, dotIdx);
+  const oldUrl = urlStr.slice(dotIdx + 3);
+  alert(promptStr);
+  window.open(oldUrl, "_blank");
 };
 
 const Modal = (props) => {
