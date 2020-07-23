@@ -3,7 +3,7 @@ import "./Home.css";
 import Portrait from "../favicon_io/jeremy_final_dialogs_circle.png";
 
 const HOME_PAGE = {
-  bio_one: `I am a software engineer. I sincerely care about the craft of system and user interface
+  bio_one: `I am a software engineer in Portland, Oregon. I sincerely care about the craft of system and user interface
   design. A well made piece of software offers future adaptability and
   modifiability. My hope is to produce tools for users which decrease
   unnecessary friction that can arise as humans interact more
