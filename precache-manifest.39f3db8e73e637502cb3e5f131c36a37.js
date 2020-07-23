@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2b084ad3e4692e6417ee35c3057aca1f",
+    "revision": "91e7dc9d964b2d0a4460d3e953d9fd19",
     "url": "/index.html"
   },
   {
-    "revision": "ec30c506443c6256efb3",
-    "url": "/static/css/main.a20f839e.chunk.css"
+    "revision": "982a7a984e60a081868b",
+    "url": "/static/css/main.7cfa7087.chunk.css"
   },
   {
-    "revision": "9720d75a6ea6529590e3",
-    "url": "/static/js/2.d3a12667.chunk.js"
+    "revision": "eea97a94014a10f1ddae",
+    "url": "/static/js/2.8dc5c50a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.d3a12667.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8dc5c50a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec30c506443c6256efb3",
-    "url": "/static/js/main.1d63ffaa.chunk.js"
+    "revision": "982a7a984e60a081868b",
+    "url": "/static/js/main.1cb138a3.chunk.js"
   },
   {
     "revision": "9b41c7e13f690904baac",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "964b9e83d5ab7c388f083d6a5a71de60",
     "url": "/static/media/appt-app.964b9e83.png"
+  },
+  {
+    "revision": "792d2422b04453ab75981e3d517cecd6",
+    "url": "/static/media/cpp.792d2422.svg"
   },
   {
     "revision": "7685cf843aa173185d9302dffb3fbc32",
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b7b69ef0b14132b029d6973f9efebd2c",
     "url": "/static/media/html5.b7b69ef0.svg"
+  },
+  {
+    "revision": "10947f212615bca95af2e209dc8c658c",
+    "url": "/static/media/intellij.10947f21.svg"
   },
   {
     "revision": "021a09785600c677e75ea3b35b4dd7f6",
@@ -92,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/news-analyzer-app.335ecef2.png"
   },
   {
+    "revision": "3e33c1cadae5474063501c2b5e073562",
+    "url": "/static/media/oraclesql.3e33c1ca.svg"
+  },
+  {
     "revision": "82e3bbb5df1f687562b855a0cadf0f77",
     "url": "/static/media/pycharm.82e3bbb5.svg"
   },
@@ -108,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/react.d01d0f47.svg"
   },
   {
-    "revision": "9c93c19ba347d747439f3ff06d8e2e40",
-    "url": "/static/media/vscode.9c93c19b.svg"
+    "revision": "47b0d844deb662ff6d525e7d7f03a006",
+    "url": "/static/media/vscode.47b0d844.svg"
   },
   {
     "revision": "27f529ca4c2a5ddae7191c41b931ba08",
