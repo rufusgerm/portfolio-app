@@ -17,6 +17,7 @@
 
 .interests-header {
   font-family: "Libre Caslon Display", serif;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -123,6 +124,14 @@
 }
 
 @media only screen and (max-width: 678px) {
+  .interests-header {
+    font-size: 1.25rem;
+  }
+
+  .skills-header {
+    font-size: 1rem;
+  }
+
   .skill-gallery {
     flex-direction: column-reverse;
     justify-content: center;

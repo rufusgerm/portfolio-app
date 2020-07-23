@@ -55,7 +55,7 @@ const IMAGES = [
     for comparisons-sake, of course. Perhaps the tutorial button...`,
     dev: `This project was developed using React, HTML5, CSS3, and JavaScript. The routing and transitions are
     implemented with React-Router. No other outside frameworks or libraries were used. Everything from the 
-    layout and design, to the responsiveness was tuned specifically by yours truly.`,
+    layout and design, to the responsiveness (especially on smaller devices) was tuned specifically by yours truly.`,
     id: 4,
     tech: ["React", "Javascript", "HTML5", "CSS3", "VSCode"],
     url:

@@ -40,7 +40,10 @@ const Modal = (props) => {
 
   return (
     <div className="modal-wrapper">
-      <div className={`modal-backdrop ${fadeBg ? "fade-in" : "fade-out"}`} />
+      <div
+        className={`modal-backdrop ${fadeBg ? "fade-in" : "fade-out"}`}
+        onClick={handleClick}
+      />
       <div className={`modal-box ${slideBox ? "slide-in" : "slide-out"}`}>
         <button className="modal-close" onClick={handleClick}>
           <i className="fa fa-times fa-2x" aria-hidden="true"></i>

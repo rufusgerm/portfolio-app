@@ -10,7 +10,10 @@ const SKILL_ICONS = [
   "java",
   "javascript",
   "mysql",
+  "oraclesql",
   "netbeans",
+  "intellij",
+  "cpp",
   "pycharm",
   "python",
   "react",
@@ -41,14 +44,14 @@ const INTERESTS_BODY = [
   },
 ];
 
-const Skills = (skill, idx) => {
+const Skills = (skillObj, idx) => {
   return (
-    <li key={skill + idx} className={`skill-item`}>
+    <li key={`icon-` + idx} className={`skill-item`}>
       <img
         className={`skill-icon`}
-        src={require(`../tech_icons/${skill.toLowerCase()}.svg`)}
-        alt={skill}
-        title={skill}
+        src={require(`../tech_icons/${skillObj.toLowerCase()}.svg`)}
+        alt={skillObj}
+        title={skillObj}
       />
     </li>
   );
@@ -60,9 +63,8 @@ const SectionButtons = (sectionTitle, idx, handleClick) => {
   const capitalTitle =
     sectionTitle.charAt(0).toUpperCase() + sectionTitle.slice(1);
   return (
-    <React.Fragment>
+    <React.Fragment key={sectionTitle + idx}>
       <button
-        key={sectionTitle + idx}
         onClick={() => handleClick(sectionTitle)}
         className={`interest-btn-${sectionTitle}`}
       >
@@ -98,17 +100,17 @@ const About = (props) => {
             SectionButtons(section.title, idx, handleClick)
           )}
         </div>
-        {INTERESTS_BODY.map((section, idx) => {
+        {INTERESTS_BODY.map((sectionObj, idx) => {
           return (
             <div
-              key={section.title + idx}
-              className={`interests-body ${section.title}-body ${
-                visibleSection === section.title
+              key={sectionObj.title + idx}
+              className={`interests-body ${sectionObj.title}-body ${
+                visibleSection === sectionObj.title
                   ? "visible-interest"
                   : "invisible-interest"
               }`}
             >
-              {Interests(section, idx)}
+              {Interests(sectionObj, idx)}
             </div>
           );
         })}

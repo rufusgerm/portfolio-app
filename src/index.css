@@ -33,15 +33,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0.25rem;
 }
 
-body::-webkit-scrollbar-track {
-  background: var(--bg-standout);
+::-webkit-scrollbar-track {
+  background: none;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
   background: var(--bg-standout);
 }
