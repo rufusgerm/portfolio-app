@@ -26,13 +26,13 @@
 
 @media only screen and (max-width: 890px) {
   .portrait {
-    height: 85%;
+    height: 75%;
   }
 }
 
 @media only screen and (max-width: 760px) {
   .portrait {
-    height: 75%;
+    height: 65%;
   }
 }
 
@@ -102,20 +102,22 @@
 
   .portrait-container {
     margin: auto;
-    min-height: 25vh;
+    min-height: 23vh;
+    max-height: 25vh;
   }
   .portrait {
     min-height: 100%;
   }
 
   .bio-container {
-    min-height: 35vh;
+    min-height: 33vh;
+    max-height: 35vh;
     width: inherit;
   }
 
   .bio-header {
     min-height: 8vh;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .bio-body {

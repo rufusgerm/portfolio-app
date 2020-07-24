@@ -107,6 +107,7 @@
 
 @media only screen and (max-width: 678px) {
   .footer {
+    /* height: 7vh; */
     flex-direction: row;
     align-items: center;
   }
