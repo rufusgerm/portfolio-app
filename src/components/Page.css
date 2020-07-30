@@ -1,6 +1,7 @@
 .page-wrapper {
-  position: absolute;
+  position: fixed;
   background: var(--bg-pages);
+  top: 8vh;
   width: 100vw;
   height: 82vh;
   display: flex;
@@ -28,7 +29,7 @@
 
 .page-body {
   min-height: 60vh;
-  max-height: 72vh;
+  max-height: 66vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,11 +38,17 @@
 
 @media only screen and (max-width: 400px) and (orientation: portrait) {
   .page-wrapper {
-    height: 70vh;
+    top: 10vh;
+    min-height: 64vh;
+    max-height: 66vh;
+  }
+  .page-btn-down {
+    margin-top: 2px;
   }
 }
 @media only screen and (max-height: 400px) and (orientation: landscape) {
   .page-wrapper {
+    top: 10vh;
     height: 80vh;
   }
 }

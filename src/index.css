@@ -1,5 +1,4 @@
-/* Meta Page Styles */
-/*#region*/
+/*#region Meta Page Styles*/
 * {
   margin: 0px;
   padding: 0px;
@@ -28,8 +27,9 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  background: var(--bg-pages);
   position: relative;
-  height: 100%;
+  height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -45,7 +45,7 @@ body {
   border-radius: 0.5rem;
   background: var(--bg-standout);
 }
-/*#endregion*/
+/*#endregion Meta Page Styles*/
 
 /* React Transitions */
 /* #region */

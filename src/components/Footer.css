@@ -107,7 +107,6 @@
 
 @media only screen and (max-width: 678px) {
   .footer {
-    /* height: 7vh; */
     flex-direction: row;
     align-items: center;
   }
@@ -119,6 +118,12 @@
   }
   .attribution-list {
     font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-height: 425px) {
+  .footer-link a {
+    font-size: 0.4rem;
   }
 }
 

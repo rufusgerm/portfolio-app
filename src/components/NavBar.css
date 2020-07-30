@@ -1,6 +1,9 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
